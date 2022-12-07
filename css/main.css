@@ -1,0 +1,315 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  position: relative;
+  /* background-color: rgb(255, 208, 0); */
+}
+
+#myBtn {
+  padding: 15px; 
+  bottom: 20px; right: 30px; 
+  height: 35px; width: 35px;
+  border: none; outline: none; 
+  position: fixed; display: flex;
+  background-color: rgb(209, 207, 207); color: white; 
+  border-radius: 50%;
+  z-index: 99; 
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0.5;
+}
+
+#myBtn img {
+  height: 300%;
+  max-width: 300%;
+}
+
+#myBtn:hover {
+  background-color: rgb(183, 179, 179); 
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  /* opacity: 0; */
+  transition: all 1.5s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+      
+.container-fluid .navbar {
+  display: flex;
+  width: 100%; height: 100px;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: fixed;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  z-index: 999;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.navbar .name-group {
+  display: flex;
+  justify-content: center;
+  height: 100%; width: 15%;
+  align-items: center;
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+.navbar .name-group img {
+  margin-right: 10px;
+}
+
+.navbar .name-group p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.navbar .nav-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%; width: 25%;
+}
+
+.navbar .nav-item-container .nav-item {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: 50%; width: 100%;
+  text-decoration: none;
+}
+
+.navbar .nav-item-container .nav-item:hover {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+.nav-item-container .nav-item span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000;
+}
+
+.container-fluid .banner {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  height: fit-content;
+}
+
+.banner img {
+  object-fit: contain;
+  height: 100%; width: 100%;
+}
+
+.banner p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-fluid .introduce {
+  padding: 125px 0px;
+}
+
+.introduce .introduce-header,
+.introduce .introduce-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.introduce .introduce-header h2 {
+  width: 65%;
+  text-align: center;
+}
+
+.introduce .introduce-content {
+}
+
+.introduce .introduce-content p {
+  width: 65%;
+  text-align: center;
+}
+
+.team-container {
+  padding: 50px 0;
+}
+
+.team-container .team-header {
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+  margin-bottom: 50px;
+}
+
+.team-container .team-member {
+  padding: 10px 50px;
+}
+
+.team-container .team-member .member-item {
+  padding: 15px 15px 30px;
+}
+
+.member-item-container {
+}
+
+.member-item-container .member-img {
+  height: 448px;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  position: relative;
+}
+
+.member-item-container .member-img img {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.member-item-container .member-img .image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.member-item-container .member-img .image-hover:hover {
+  opacity: 1;
+}
+
+.member-info {
+  margin-top: 30px;
+}
+
+.member-info .member-name {
+  margin-bottom: 14px;
+}
+
+.member-info .member-name h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  padding: 0 50px;
+}
+
+.line hr {
+  color: #ddd;
+  background-color: #ddd;
+}
+
+.about-us {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.about-us .about-us-header {
+  display: flex;
+}
+
+.about-us .about-us-header h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.about-us .about-us-body {
+}
+
+.about-us .about-us-body .about-us-item {
+  padding: 35px 0;
+}
+
+.about-us .about-us-body .about-us-item h3 {
+  margin-bottom: 25px;
+  color: #d1a055;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.about-us .about-us-body .about-us-item h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer {
+  padding: 50px 0;
+  height: 400px;
+  background-color: rgb(205, 205, 205);
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-group h3 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-group h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+}
+
+.footer-group .footer-img {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-group .footer-img img {
+  object-fit: cover;
+  height: fit-content;
+  width: 100px;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 65px;
+  color: #d1a055;
+}
+
+ 
